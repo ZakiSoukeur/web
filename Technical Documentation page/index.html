@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>
+                Introduction
+            </header>
+            <p>Python is an interpreted, interactive, object-oriented programming language. It incorporates modules,
+                exceptions, dynamic typing, very high level dynamic data types, and classes. It supports multiple
+                programming paradigms beyond object-oriented programming, such as procedural and functional programming.
+                Python combines remarkable power with very clear syntax. It has interfaces to many system calls and
+                libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an
+                extension language for applications that need a programmable interface. Finally, Python is portable: it
+                runs on many Unix variants including Linux and macOS, and on Windows.</p>
+        </section>
+        <section id="What_you_should_already_know" class="main-section">
+            <header>
+                What you should already know
+            </header>
+            <p>
+                <li>Learn the difference between front-end and back-end</li>
+            </p>
+            <p>
+                <li>Understand what you can do with Python</li>
+            </p>
+            <p>
+                <li>Understand what jobs hire Python developers </li>
+            </p>
+        </section>
+        <section id="Hello_world" class="main-section">
+            <header>
+                Hello World
+            </header>
+            <p>To get started with writing python, open the Scratchpad and write your first "Hello world" python code:
+            </p>
+            <code>print("Hello World!")</code>
+        </section>
+        <section id="Variables" class="main-section">
+            <header>
+                Variables
+            </header>
+            <p>Every value in Python has a datatype. Different data types in Python are Numbers, List, Tuple, Strings,
+                Dictionary, etc. Variables in Python can be declared by any name or even alphabets like a, aa, abc, etc.
+            </p>
+        </section>
+        <section id="Declaring_variables" class="main-section">
+            <header>
+                Declaring variables
+            </header>
+            <p>Let see an example. We will define variable in Python and declare it as "a" and print it.</p>
+            <code>a=100 </code>
+            <code> print (a)</code>
+            <p>You can re-declare Python variables even after you have declared once.</p>
+            <code># Declare a variable and initialize it</code>
+            <code>   f = 0</code>
+            <code> print(f)</code>
+            <code>  # re-declaring the variable works</code>
+            <code>  f = 'guru99'</code>
+            <code> print(f)</code>
+        </section>
+        <section id="Variable_scope" class="main-section">
+            <header>
+                Variable scope
+            </header>
+            <p>A variable is only available from inside the region it is created. This is called scope.A variable
+                created inside a function belongs to the local scope of that function, and can only be used inside that
+                function.
+
+            </p>
+            <p>Example:</p>
+            <code>def myfunc():</code>
+            <code>  x = 300</code>
+            <code> print(x)</code>
+
+            <code> myfunc()</code>
+        </section>
+        <section id="Global_variables" class="main-section">
+            <header>
+                Global variables
+            </header>
+            <p>A variable created in the main body of the Python code is a global variable and belongs to the global
+                scope.
+                Global variables are available from within any scope, global and local.</p>
+        </section>
+        <section id="Data_types" class="main-section">
+            <header>
+                Data types
+            </header>
+            <p>In programming, data type is an important concept.
+
+                Variables can store data of different types, and different types can do different things.
+
+                Python has the following data types built-in by default, in these categories:</p>
+            <h4>Text Type:<span>str</span></h4>
+            <h4>Numeric Types : <span> int, float, complex</span></h4>
+            <h4>Sequence Types : <span> list, tuple, range</span></h4>
+            <h4>Mapping Type : <span> dict</span></h4>
+            <h4>Set Types : <span> set, frozenset</span></h4>
+            <h4>Boolean Type : <span> Bool</span></h4>
+            <h4>Binary Types : <span> bytes, bytearray, memoryview</span></h4>
+
+        </section>
+        <section id="if...else_statement" class="main-section">
+            <header>
+                if...else statement
+            </header>
+            <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
+                to execute a statement if the condition is false. An if statement looks as follows:</p>
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
+            <p>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this
+                condition".</p>
+            <code>a = 33</code>
+            <code>b = 33</code>
+            <code> if b > a:</code>
+            <code>   print("b is greater than a")</code>
+            <code>  elif a == b:</code>
+            <code>   print("a and b are equal")</code>
+        </section>
+        <section id="The_While_statement" class="main-section">
+            <header>
+                The While statement
+            </header>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <code>i = 1
+                while i < 6:
+                  print(i)
+                  i += 1</code>
+            <h4><strong>Note : </strong>remember to increment i, or else the loop will continue forever.</h4>
+            <p>The while loop requires relevant variables to be ready, in this example we need to define an indexing
+                variable, i, which we set to 1.</p>
+        </section>
+        <section id="Function_declarations" class="main-section">
+            <header>
+                Function declarations
+            </header>
+            <p>A function is a block of code which only runs when it is called.
+                You can pass data, known as parameters, into a function.
+                A function can return data as a result.To declate a function you need:</p>
+            <li>The name of the function.</li>
+            <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
+            <code>def my_function():</code>
+            <code>  print("Hello from a function")</code>
+            <p>To call a function, use the function name followed by parenthesis:</p>
+            <code>def my_function():</code>
+            <code> print("Hello from a function")</code>
+
+            <code> my_function()</code>
+            <p>Information can be passed into functions as arguments.
+                Arguments are specified after the function name, inside the parentheses. You can add as many arguments
+                as you want, just separate them with a comma.
+                The following example has a function with one argument (fname). When the function is called, we pass
+                along a first name, which is used inside the function to print the full name:</p>
+            <code>def my_function(fname):</code>
+            <code>   print(fname + " Refsnes")</code>
+
+            <code>  my_function("Emil")</code>
+            <code>  my_function("Tobias")</code>
+            <code>  my_function("Linus")</code>
+        </section>
+        <section id="Arrays" class="main-section">
+            <header>
+                Arrays
+            </header>
+            <p>An array is a special variable, which can hold more than one value at a time.
+                If you have a list of items (a list of car names, for example), storing the cars in single variables
+                could look like this:</p>
+            <code>car1 = "Ford"</code>
+            <code>car2 = "Volvo"</code>
+            <code> car3 = "BMW"</code>
+            <p> Arrays are used to store multiple values in one single variable:</p>
+            <code>cars = ["Ford", "Volvo", "BMW"]</code>
+        </section>
+        <section id="Reference" class="main-section">
+            <header>
+                Reference
+            </header>
+            <p>All the documentation in this page is taken from <a
+                    href="https://www.w3schools.com/python/">W3SCHOOLS</a></p>
+        </section>
+
+    </main>
+
+    <nav id="navbar">
+        <header>
+            Python Documentation
+        </header>
+        <hr>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <hr>
+        <li><a href="#What_you_should_already_know" class="nav-link">What you should already know</a></li>
+        <hr>
+        <li><a href="#Hello_world" class="nav-link">Hello World</a></li>
+        <hr>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+        <hr>
+        <li><a href="#Declaring_variables" class="nav-link">Declaring variables</a></li>
+        <hr>
+        <li><a href="#Variable_scope" class="nav-link">Variable scope</a></li>
+        <hr>
+        <li><a href="#Global_variables" class="nav-link">Global variables</a></li>
+        <hr>
+        <li><a href="#Data_types" class="nav-link">Data types</a></li>
+        <hr>
+        <li><a href="#if...else_statement" class="nav-link">if...else statement</a></li>
+        <hr>
+        <li><a href="#The_While_statement" class="nav-link">The While statement</a></li>
+        <hr>
+        <li><a href="#Function_declarations" class="nav-link">Function declarations</a></li>
+        <hr>
+        <li><a href="#Arrays" class="nav-link">Arrays</a></li>
+        <hr>
+        <li><a class="nav-link" href="#Reference" >Reference</a></li>
+
+    </nav>
+
+</body>
+
+</html>
