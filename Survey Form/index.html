@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="container">
+        <div class="head">
+       <h1 id="title">FreeCodeCamp Form</h1>
+       <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+       
+       <form action="" id="survey-form">
+           <div><label id="name-label" for="name">Name:</label>
+           <input class="form-control" type="text" id="name" placeholder="Your Name" required></div>
+          <div> <label id="email-label" for="email">Email:</label>
+           <input id="email" class="form-control" type="email" required placeholder="name@gmail.com"></div>
+          <div> <label id="number-label" for="number">Age:</label>
+           <input class="form-control" id="number" type="number" min="3" max="10" ></div>
+          <div>
+              <p>Which option best describes your current role?</p> 
+              <select name="" id="dropdown">
+           <option value="student">Student</option>
+           <option value="job">Full time job</option>
+           <option value="learner">Full time learner</option>
+           <option value="nosay">Prefer not to say</option>
+           <option value="other">Other</option>
+      
+
+           </select>
+        </div>
+        <div>
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label  for="yes">Yes</label>
+            <input type="radio" name="rbtn" id="yes" value="yes">
+            <label for="no">No</label>
+            <input type="radio" name="rbtn" id="no" value="no"> 
+        </div>
+        <p>What would you like to see improved? </p>
+           <label for="1">Front-end Projects</label>
+           <input  type="checkbox" name="" value="1" id="1">
+           <label for="2">Back-end Projects</label>
+           <input   type="checkbox" name="" value="2" id="2">
+           <label for="3">Videos</label>
+           <input   type="checkbox" name="" value="3" id="3">
+           <label for="4">Challenges</label>
+           <input type="checkbox"value='4' id="4">
+           <p>Add your Comment here:</p>
+           <textarea rows="6" cols="50" name="comment" form="usrform">
+            Comment</textarea>
+            <button id="submit">Submit</button>
+       </form>
+    </div>
+</body>
+</html>
